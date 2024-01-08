@@ -42,7 +42,7 @@ func handleTCPConnection(conn net.Conn) {
 	for {
 		n, err := conn.Read(buffer)
 		if err != nil {
-			fmt.Println("TCP error:", err)
+			// fmt.Println("TCP error:", err)
 			return
 		}
 		fmt.Printf("Received TCP data from %s: %s\n", conn.RemoteAddr(), string(buffer[:n]))
