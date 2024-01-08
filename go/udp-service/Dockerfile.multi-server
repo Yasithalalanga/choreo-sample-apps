@@ -50,4 +50,4 @@ RUN adduser \
 USER 10014
 
 # Set the entrypoint to the executable
-ENTRYPOINT ["./server"]
+ENTRYPOINT ["./multi-server"]
